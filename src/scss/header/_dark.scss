@@ -1,0 +1,39 @@
+@use '../custom' as *;
+
+@include color-mode(dark) {
+    a {
+       color: white;
+    }
+    
+    .divAzul,
+    section {
+       background-color: rgba(29, 29, 29, 0.555) !important;
+    }
+ 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+       color: white !important;
+    }
+ 
+    .principal{
+       background-color: black !important;
+    }
+ 
+   .btn{
+       background-color: $azul !important;
+       color: rgb(255, 255, 255) !important;
+    }
+ 
+    .dark{
+       background-color: black !important;
+    }
+ 
+    transition: 1.1s ease;
+ }
+
+ .luna:hover{
+    cursor: pointer;
+ }

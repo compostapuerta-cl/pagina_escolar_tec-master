@@ -1,0 +1,196 @@
+@use '../custom' as *;
+
+//CAROUSEL
+//5.5
+.bg-img-1 {
+   background-image: url(../../img/caro1.jpg);
+}
+
+.bg-img-2 {
+   background-image: url(../../img/github.png);
+}
+
+.bg-img-3 {
+   background-image: url(../../img/caro2.jpg);
+}
+
+.bg-img-4 {
+   background-image: url(../../img/caro3.jpg);
+}
+
+.carousel-imagen {
+   height: 45rem;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
+//1
+.navegacion {
+   position: relative;
+   display: flex;
+   height: 100%;
+   align-items: end;
+   justify-content: flex-start;
+}
+
+.position {
+   position: absolute;
+   top: .3rem;
+   left: 46%;
+   width: auto;
+}
+
+//2
+.principal {
+   height: 5rem;
+}
+
+
+.azul {
+   font-weight: 600;
+   margin-right: 1rem;
+}
+
+.naveAnclas {
+   padding-left: 11rem;
+   font-size: 1.65rem;
+}
+
+.carousel-item img {
+   width: 100%;
+   height: 70rem;
+}
+
+//3
+
+.conInfo {
+   width: 85%;
+   margin: 0 auto;
+   padding: 3rem;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+}
+
+.card-body {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   height: 20rem;
+}
+
+.card-text {
+   flex-grow: 1;
+   overflow: hidden;
+}
+
+//4
+.frames {
+   width: 80%;
+   margin: 0 auto;
+}
+
+//5
+
+.fondo {
+   width: 100%;
+   height: 5rem;
+   background-image: url(../../img/footerGob.svg);
+}
+
+.portal {
+   font-size: 1.1rem;
+   font-style: italic;
+}
+
+//6DROPDOWN
+@include media-breakpoint-up(lg) {
+   .dropdownSASS:hover .dropdown-menu {
+      display: block;
+   }
+
+   .dropdownSASS:hover .hovAzul {
+      color: $azulHover;
+   }
+
+   .dropdown-item:hover {
+      color: $azulHover;
+   }
+}
+
+
+.gob {
+   color: white;
+
+   &:hover {
+      color: green;
+   }
+}
+
+//7AzulNaveGacion Drop
+.menuAzul {
+   text-align: center;
+   color: white;
+   background-color: $primary;
+}
+
+.dropdownAzul:hover .dropdown-menu {
+   display: block;
+}
+
+.menuAzul .dropdown-item:hover {
+   background-color: $azulHover;
+}
+
+@include media-breakpoint-up(lg) {
+
+   //Con Carousel
+   .carousel-imagen {
+      background-repeat: repeat;
+      background-size: 50% 100%;
+      background-position: unset;
+   }
+
+   .bg-img-2 {
+      background-image: url(../../img/github.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 20%;
+   }
+}
+
+
+//8
+.fuenteR {
+   font-size: normal;
+}
+
+@media screen and (max-width: 1455px) {
+   .fuenteR {
+      font-size: 1.3rem;
+   }
+
+   .circulos {
+      width: 2rem;
+   }
+
+   .position{
+      top: -15%;
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .fuenteR {
+      font-size: 1rem;
+   }
+
+   .dropdownAzul{
+      font-size: 1rem;
+   }
+
+}

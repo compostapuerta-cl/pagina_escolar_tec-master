@@ -1,0 +1,16 @@
+@use '../custom' as *;
+
+@include media-breakpoint-down(md) {
+    .redesHide {
+        display: none;
+    }
+
+    .asideHide, .navHide {
+        display: none !important;
+    }
+
+.can{
+    display: block !important;
+}
+
+}
